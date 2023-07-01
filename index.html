@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="./img/logonetflix.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav class="menu">
+        <img class="menu__logo" src="img/logo.png" alt="logo" />
+        <div class="menu__element">
+          <a class="menu__element-item" href="#">Home</a>
+          <a class="menu__element-item" href="#">Tv Shows</a>
+          <a class="menu__element-item" href="#">Movies</a>
+          <a class="menu__element-item" href="#">Latest</a>
+          <a class="menu__element-item" href="#">My List</a>
+        </div>
+        <form class="menu__search" accept-charset="utf-8">
+          <input class="menu__search-input" type="text" name="search" id="search" placeholder="Search" />
+          <i class='bx bx-search menu__search-icon'></i>
+        </form>
+      </nav>
+    </header>
+    <main class="netflix">
+      <img class="netflix__image" src="img/logoletras.png" alt="logo serie" />
+      <div class="netflix__serie">
+        <p class="netflix__serie-item">2022</p>
+        <p class="button button--series">16+</p>
+        <p class="netflix__serie-item">6 Temporadas</p>
+        <p>Serie</p>
+      </div>
+      <p class="netflix__text">
+        Maecenas fringilla leo nisi, vel pulvinar mi imperdiet quis. Aenean eget iaculis libero, quis bibendum turpis. Donec et laoreet odio. Donec mauris sapien, dapibus eleifend augue at, efficitur porta lorem. Vestibulum viverra euismod orci commodo pellentesque.
+      </p>
+      <div class="netflix__controls">
+        <a class="button" href="#">Play</a>
+        <a class="button button--dark" href="#">My List</a>
+      </div>
+      <div class="netflix__play" id="controls">
+        <img class="netflix__play-icon" src="img/play.png" alt="play" />
+        <p class="netflix__play-text">watch trailer</p>
+      </div>
+    </main>
+  </div>
+  <div class="serie" id="serie">
+    <video class="serie__video" id="trailer" controls src="img/trailer.mp4"></video>
+    <i class='serie__close bx bx-x' id="close"></i>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
